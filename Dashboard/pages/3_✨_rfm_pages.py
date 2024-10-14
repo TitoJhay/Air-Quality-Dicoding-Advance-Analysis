@@ -95,7 +95,6 @@ RFM Analysis :
     3. Berdasarkan Jumlah(monetary) menghasilkan polusi SO2 bernilai danger tertinggi terjadi **di stasiun Dongsi dimana sebanyak diatas 400000 polutan SO2 bernilai danger yang dihasilkan**
     """)
 
-
 ### Sidebar
 st.sidebar.caption(
     "Built by [Tito Jhay](https://www.linkedin.com/in/tito-jaya-9b5537201/). Like this? [Hire me!](mailto:mhmmdtjaya@gmail.com)"
