@@ -2,33 +2,20 @@
 
 ## Live Dashboard
 
-https://maliki-airquality.streamlit.app/
+https://air-quality-advance.streamlit.app
 
-## Live Dashboard
+## Structure Folder
 
-d:/Data Analyst/Submission_Dicoding_AirQuality/
 ├─ Dashboard/
 │ ├─ pages/
-│ │ ├─ 1_main_pages.py
-│ │ ├─ 2_cluster_pages.py
-│ │ └─ 3_rfm_pages.py
+│ │ ├─ 1*📌_main_pages.py
+│ │ ├─ 2*🧩*cluster_pages.py
+│ │ └─ 3*✨_rfm_pages.py
+│ └─ hello.py
+├─ Data/
 │ ├─ clustering.csv
-│ ├─ hello.py
 │ ├─ main.csv
 │ └─ rfm.csv
-├─ Data/
-│ ├─ PRSA_Data_Aotizhongxin_20130301-20170228.csv
-│ ├─ PRSA_Data_Changping_20130301-20170228.csv
-│ ├─ PRSA_Data_Dingling_20130301-20170228.csv
-│ ├─ PRSA_Data_Dongsi_20130301-20170228.csv
-│ ├─ PRSA_Data_Guanyuan_20130301-20170228.csv
-│ ├─ PRSA_Data_Gucheng_20130301-20170228.csv
-│ ├─ PRSA_Data_Huairou_20130301-20170228.csv
-│ ├─ PRSA_Data_Nongzhanguan_20130301-20170228.csv
-│ ├─ PRSA_Data_Shunyi_20130301-20170228.csv
-│ ├─ PRSA_Data_Tiantan_20130301-20170228.csv
-│ ├─ PRSA_Data_Wanliu_20130301-20170228.csv
-│ └─ PRSA_Data_Wanshouxigong_20130301-20170228.csv
 ├─ img/
 │ ├─ dicoding.gif
 │ ├─ email.gif

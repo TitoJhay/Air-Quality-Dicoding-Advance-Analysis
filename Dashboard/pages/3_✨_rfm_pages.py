@@ -10,7 +10,7 @@ st.set_page_config(
 @st.cache_data
 def load_data():
     try:
-        df = pd.read_csv('dashboard/rfm.csv')
+        df = pd.read_csv('Data/rfm.csv')
     except FileNotFoundError:
         df = pd.read_csv('rfm.csv')
     return df

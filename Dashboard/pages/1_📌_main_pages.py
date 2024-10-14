@@ -8,9 +8,9 @@ st.set_page_config(page_title="Main Pages", page_icon="📈")
 @st.cache_data
 def load_data():
     try:
-        df = pd.read_csv('dashboard/rfm.csv')
+        df = pd.read_csv('Data/main.csv')
     except FileNotFoundError:
-        df = pd.read_csv('rfm.csv')
+        df = pd.read_csv('main.csv')
     return df
 
 @st.cache_data

@@ -10,9 +10,9 @@ st.set_page_config(
 @st.cache_data
 def load_data():
     try:
-        df = pd.read_csv('dashboard/rfm.csv')
+        df = pd.read_csv('Data/clustering.csv')
     except FileNotFoundError:
-        df = pd.read_csv('rfm.csv')
+        df = pd.read_csv('clustering.csv')
     return df
 
 df_cls = load_data()
