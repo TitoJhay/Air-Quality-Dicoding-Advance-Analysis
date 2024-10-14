@@ -98,14 +98,14 @@ RFM Analysis :
 
 ### Sidebar
 st.sidebar.caption(
-    "Built by [Tito Jhay](https://www.linkedin.com/in/tito-jaya-9b5537201/). Like this? [Hire me!](https://www.instagram.com/jhaymedias)"
+    "Built by [Tito Jhay](https://www.linkedin.com/in/tito-jaya-9b5537201/). Like this? [Hire me!](mailto:mhmmdtjaya@gmail.com)"
 )
 
 # Define image paths
-linkedin = "https://raw.githubusercontent.com/sahirmaharaj/exifa/main/img/linkedin.gif"
-dicoding = "https://raw.githubusercontent.com/sahirmaharaj/exifa/main/img/topmate.gif"
-email = "https://raw.githubusercontent.com/sahirmaharaj/exifa/main/img/email.gif"
-share = "https://raw.githubusercontent.com/sahirmaharaj/exifa/main/img/share.gif"
+linkedin = "https://raw.githubusercontent.com/TitoJhay/Air-Quality-Dicoding-Advance-Analysis/refs/heads/main/img/linkedin.gif"
+dicoding = "https://raw.githubusercontent.com/TitoJhay/Air-Quality-Dicoding-Advance-Analysis/refs/heads/main/img/dicoding.gif"
+email = "https://raw.githubusercontent.com/TitoJhay/Air-Quality-Dicoding-Advance-Analysis/refs/heads/main/img/email.gif"
+share = "https://raw.githubusercontent.com/TitoJhay/Air-Quality-Dicoding-Advance-Analysis/refs/heads/main/img/share.gif"
 
 st.sidebar.caption(
     f"""

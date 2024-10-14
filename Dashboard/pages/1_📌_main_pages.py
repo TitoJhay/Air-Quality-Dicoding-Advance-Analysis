@@ -232,31 +232,27 @@ st.write(
 
 ### Sidebar
 st.sidebar.caption(
-    "Built by [Tito Jhay](https://www.linkedin.com/in/tito-jaya-9b5537201/). Like this? [Hire me!](https://www.instagram.com/jhaymedias)"
+    "Built by [Tito Jhay](https://www.linkedin.com/in/tito-jaya-9b5537201/). Like this? [Hire me!](mailto:mhmmdtjaya@gmail.com)"
 )
 
 # Define image paths
-linkedin = "img/linkedin.gif"
-dicoding = "img/dicoding.gif"
-email = "img/email.gif"
-share = "img/share.gif"
+linkedin = "https://raw.githubusercontent.com/TitoJhay/Air-Quality-Dicoding-Advance-Analysis/refs/heads/main/img/linkedin.gif"
+dicoding = "https://raw.githubusercontent.com/TitoJhay/Air-Quality-Dicoding-Advance-Analysis/refs/heads/main/img/dicoding.gif"
+email = "https://raw.githubusercontent.com/TitoJhay/Air-Quality-Dicoding-Advance-Analysis/refs/heads/main/img/email.gif"
+share = "https://raw.githubusercontent.com/TitoJhay/Air-Quality-Dicoding-Advance-Analysis/refs/heads/main/img/share.gif"
 
-# Create columns for the images
-col1, col2, col3, col4 = st.sidebar.columns(4)
+st.sidebar.caption(
+    f"""
+    <div style='display: flex; align-items: center;'>
+        <a href='https://www.linkedin.com/in/tito-jaya-9b5537201/'><img src='{linkedin}' style='width: 35px; height: 35px; margin-right: 25px;'></a>
+        <a href='https://www.dicoding.com/users/titojayaaaa/academies'><img src='{dicoding}' style='width: 32px; height: 32px; margin-right: 25px;'></a>
+        <a href='mailto:mhmmdtjaya@gmail.com'><img src='{email}' style='width: 28px; height: 28px; margin-right: 25px;'></a>
+        <a href='https://www.kaggle.com/jhayyy'><img src='{share}' style='width: 28px; height: 28px; margin-right: 25px;'></a>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
-# Display images in columns
-with col1:
-    st.image(linkedin, width=35)
-    st.markdown("[LinkedIn](https://www.linkedin.com/in/tito-jaya-9b5537201/)")
-
-with col2:
-    st.image(dicoding, width=32)
-    st.markdown("[Dicoding](https://www.dicoding.com/users/titojayaaaa/academies)")
-
-with col3:
-    st.image(email, width=28)
-    st.markdown("[Email](mailto:mhmmdtjaya@gmail.com)")
-
-with col4:
-    st.image(share, width=28)
-    st.markdown("[Kaggle](https://www.kaggle.com/jhayyy)")
+st.sidebar.caption(
+    "Thanks For your support!"
+)
