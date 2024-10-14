@@ -7,7 +7,10 @@ st.set_page_config(page_title="Main Pages", page_icon="📈")
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv('dashboard/main.csv', parse_dates=['datetime'])
+    try:
+        df = pd.read_csv('dashboard/rfm.csv')
+    except FileNotFoundError:
+        df = pd.read_csv('rfm.csv')
     return df
 
 @st.cache_data
