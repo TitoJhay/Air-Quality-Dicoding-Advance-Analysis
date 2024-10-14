@@ -94,6 +94,9 @@ else:
     # Define the last day
     last_day = pd.Timestamp('2017-02-28 23:00:00')
 
+    # Rename 'PM2.5' to 'PM' in the main DataFrame
+    df_main = df_main.rename(columns={"PM2.5": "PM"})
+
     #Prepare Data For Resampling
     @st.cache_data
     def prepare_pm_data(df):
@@ -103,24 +106,24 @@ else:
         df_last_5_years = df[df['datetime'] >= last_day - pd.DateOffset(years=5)]
 
         daily_frequency_df = df_last_month.resample(rule='D', on='datetime').agg({
-            "PM2.5": "mean",
+            "PM": "mean",
             "PM10": "mean"
-        }).reset_index().rename(columns={"PM2.5": "PM"})
+        }).reset_index()
 
         weekly_frequency_df = df_last_6_months.resample(rule='W', on='datetime').agg({
-            "PM2.5": "mean",
+            "PM": "mean",
             "PM10": "mean"
-        }).reset_index().rename(columns={"PM2.5": "PM"})
+        }).reset_index()
 
         monthly_frequency_df = df_last_year.resample(rule='M', on='datetime').agg({
-            "PM2.5": "mean",
+            "PM": "mean",
             "PM10": "mean"
-        }).reset_index().rename(columns={"PM2.5": "PM"})
+        }).reset_index()
 
         yearly_frequency_df = df_last_5_years.resample(rule='Y', on='datetime').agg({
-            "PM2.5": "mean",
+            "PM": "mean",
             "PM10": "mean"
-        }).reset_index().rename(columns={"PM2.5": "PM"})
+        }).reset_index()
 
         return daily_frequency_df, weekly_frequency_df, monthly_frequency_df, yearly_frequency_df
 
